@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+
+        body {
+            background-color: lightsteelblue;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 768px;
+            background-color: #fcfcfc;
+            color: #111;
+            padding: 3em 2em;
+            margin: auto;
+            border-radius: 4px;
+
+        }
+
+        .question-form * {
+
+          /*  margin: auto;
+            display: block; */
+        }
+
+        h1 {
+
+            text-align: center;
+            font-size: 3rem;
+
+        }
+
+        label {
+
+            display: block;
+            margin: 1em 0em;
+
+        }
+
+        section, input, textarea,
+        .container {
+
+            border-radius: 3px;
+
+        }
+
+        section {
+
+            border: 1px solid lightslategray;
+            padding: 1em;
+            margin-top: 1em;
+        }
+
+        input, textarea {
+            padding: 1em;
+            font-size: 14px;
+            width: 85%;
+            
+        }
+
+        button {
+            padding: 0.5rem;
+            width: 60%;
+            font-size: 16px;
+        }
+
+        textarea {
+            
+            height: 10em;
+        }
+
+        textarea, input {
+            display: block;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            Retirement Investment Knowledge Base
+        </h1>
+  
+
+        <section>
+            <form name="QuestionForm" class="question-form">
+                <h2>
+                    Ask a question
+                </h2>
+                <label>
+                    Question Title
+                    <input type="text" name="QuestionTitle" value="" placeholder="The title of your question" />
+                </label>
+
+                <label>  
+                    Question Body
+                    <textarea placeholder="The contents of your question"></textarea>
+                </label>
+
+
+                <button type="submit">Ask the Experts</button>
+            </form>
+        </section>
+
+        <section class="question-list">
+            <h2>Recent Questions</h2>
+
+            <div class="question">
+                <h4>Are dividends tax deductible?</h4>
+                <span>4 responses - See More</span>
+            </div>
+
+            <div class="question">
+                <h4>Is it smart to invest in commodities?</h4>
+                <span>2 responses - See More</span>
+            </div>
+        </section>
+    </div>
+    
+
+    <script src="x4v8"></script>
+</body>
+</html>
