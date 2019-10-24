@@ -1,19 +1,11 @@
+// todo.. add types to this?
+
 import http = require('http');
 import express = require('express');
 import path = require('path');
 
-var port = process.env.port || 1337
-/*http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    //res.end('Hello World\n');
-    // res.end?
-    // pretty ad hoc way of doing a server...
-    // but... sufficient...
-    res.write('<h1>Friendly Application</h1>');
-    res.write('<script src=main.js></script>');
-    res.end();
-    //res.status(200).send(``)
-}).listen(port);*/
+const port : string | number = process.env.port || 1337;
+const privateKey = `1234-abcd`; // We must ensure that the compiled version of this file is never sent to the end user.
 
 const app = new express();
 
@@ -22,7 +14,7 @@ const app = new express();
 
 
 // this is a cool way to serve a js file but is kind of silly
-app.use('/x4v8', (req, res) => {
+/*app.use('/x4v8', (req, res) => {
 
     res.sendFile(path.join(__dirname, 'main.js'));
 
@@ -32,13 +24,15 @@ app.use('/', (req, res) => {
 
     res.sendFile(path.join(__dirname, 'index.html'));
 
+})*/
+
+app.use(express.static("public"));
+
+app.get("/main.js", (req, res) => {
+
+    res.sendFile(path.resolve(__dirname, "main.js"));
+
 })
 
-
-
-
-//app.get('/', (req, res) => {
-//    res.send("Hiya!");
-//})
-
 app.listen(port);
+console.info(`App listening on port ${port}!`);

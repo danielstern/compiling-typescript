@@ -10,9 +10,7 @@
 That's a real mystery. Use npm install instead maybe.
 
 ### Running in wathc mode?
-#### Should Open Powershell in /Tools?
---No terminal is available:--
-Terminal IS available
+- VsCode offers a good built in terminal
 
 Opening Code menu: CTRL + SHIFT + P
  - Configure task runner (creates tasks.json)
@@ -23,4 +21,5 @@ Opening Code menu: CTRL + SHIFT + P
 VScode uses tasks.json
 
 Building: CMD + SHIFT + B
+  - can also be used to run watch mode
   - necessary if you are not using "watch" mode
