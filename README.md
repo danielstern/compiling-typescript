@@ -9,4 +9,18 @@
 ### why is "install new packages" grayed out?
 That's a real mystery. Use npm install instead maybe.
 
-# Open Powershell in /Tools
+### Running in wathc mode?
+#### Should Open Powershell in /Tools?
+--No terminal is available:--
+Terminal IS available
+
+Opening Code menu: CTRL + SHIFT + P
+ - Configure task runner (creates tasks.json)
+ - typescript "watch" mode may be availabile
+    - -w flag,
+    - is watching flag
+
+VScode uses tasks.json
+
+Building: CMD + SHIFT + B
+  - necessary if you are not using "watch" mode
