@@ -1,16 +1,8 @@
-/** Visual studio provides excellent code hints for this file.*/
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es6",
-    "lib": ["es6"],
-    /*"sourceMap": true,*/ /* Not compatible with inlineSourceMap setting */
-    "inlineSourceMap": true,
-    "noImplicitAny": false,
-    "outDir": "build",
-    "watch": true
-  },
-  "exclude": [
-    "node_modules"
+  "extends": "./tsconfig-base.json",
+  "references": [
+    {
+      "path": "./validator"
+    }
   ]
 }

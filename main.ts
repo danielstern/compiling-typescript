@@ -1,3 +1,3 @@
-const message: string = "Supercharged!";
+const message: string = "Superchargedddd!";
 
 console.log(message);
