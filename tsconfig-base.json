@@ -1,10 +1,11 @@
 {
     "compilerOptions": {
-        "declaration": true,
-        "target": "es5",
+        "declaration": true, // Governs the creation of d.ts files,
+        "declarationDir": "declarations", // Tells TSC where to put declaration files (by default, the same folder as generated .js files)
+        "target": "es6",
         "module": "commonjs",
         "strict": true,
-        "noUnusedLocals": true,
+        "noUnusedLocals": false, // Declaring a local and not using it will cause a compilation error
         "noUnusedParameters": true,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
@@ -12,6 +13,9 @@
         "inlineSourceMap": true,
         "noImplicitAny": false,
         "outDir": "build",
-        "watch": true
+        "watch": true,
+        "lib": [
+            "es6"
+        ]
     }
 }
