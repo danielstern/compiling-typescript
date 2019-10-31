@@ -1,141 +1,91 @@
-﻿<!DOCTYPE html>
+﻿<head>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-    <style>
+    <title>Educational Resources Access</title>
 
-        body {
-            background-color: lightsteelblue;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 768px;
-            background-color: #fcfcfc;
-            color: #111;
-            padding: 1em 1em;
-            /*margin: auto;*/
-            border-radius: 4px;
-            margin-top: 90px;
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-        }
-
-        .header {
-            position: absolute;
-            width: 100%;
-            height: 50px;
-            top: 0px;
-            left: 0px;
-            right: 0px;
-            background-color: darkslateblue;
-            padding: 1rem  2rem;
-        }
-
-
-        h1 {
-
-            text-align: left;
-            font-size: 3rem;
-            margin-top: 0px;
-            color: white;
-
-        }
-
-        label {
-
-            display: block;
-            margin: 1em 0em;
-
-        }
-
-        section, input, textarea,
-        .container {
-
-            border-radius: 3px;
-
-        }
-
-        section {
-
-            border: 1px solid lightslategray;
-            padding: 1em;
-            margin-bottom: 1em;
-        }
-
-        input, textarea {
-            padding: 1em;
-            font-size: 14px;
-            width: 85%;
-            
-        }
-
-        button {
-            padding: 0.5rem;
-            width: 60%;
-            font-size: 16px;
-        }
-
-        textarea {
-            
-            height: 10em;
-        }
-
-        textarea, input {
-            display: block;
-            margin-top: 1em;
-        }
-    </style>
 </head>
+
 <body>
 
-    <div class="container">
+    <div class="container mt-3">
 
         <div class="header">
 
-                <h1>
-                        Retirement Investment Knowledge Base
-                </h1>
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom shadow-sm">
+                <h5 class="my-0 mr-md-auto font-weight-normal">
+                    Educational Resources Access
+                </h5>
+                <nav class="my-2 my-md-0 mr-md-3">
+                    <a class="p-2 text-dark" href="#">Archive</a>
+                    <a class="p-2 text-dark" href="#">Search</a>
+                </nav>
+                <a class="btn btn-outline-primary" href="#">Sign up</a>
+            </div>
 
         </div>
-        
-
-        <section>
-            <form name="QuestionForm" class="question-form">
-                <h2>
-                    Ask a question
-                </h2>
-                <label>
-                    Question Title
-                    <input type="text" name="QuestionTitle" value="" placeholder="The title of your question" />
-                </label>
-
-                <label>  
-                    Question Body
-                    <textarea placeholder="The contents of your question"></textarea>
-                </label>
 
 
-                <button type="submit">Ask the Experts</button>
+        <section class="col-md-8 order-md-1 mt-4 mb-5">
+
+            
+            <form>
+
+                <h3 class="mb-3">Ask a Question</h3>
+
+                    <section class="mb-4">
+
+                        <label for="title">Question Title</label>
+
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+
+                        <div class="invalid-feedback">
+
+                            Valid title is required.
+
+                        </div>
+
+                    </section>
+
+                    <section>
+
+                        <label for="contents">Your Question</label>
+
+                        <textarea type="text" class="form-control" id="contents"></textarea>
+
+                    </section>                
+
             </form>
+
         </section>
 
-        <section class="question-list">
-            <h2>Recent Questions</h2>
 
-            <div class="question">
-                <h4>Are dividends tax deductible?</h4>
-                <span>4 responses - See More</span>
-            </div>
 
-            <div class="question">
-                <h4>Is it smart to invest in commodities?</h4>
-                <span>2 responses - See More</span>
-            </div>
-        </section>
+        <section class="col-md-8 order-md-1 mt-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span>New Questions</span>
+                    <span class="badge badge-secondary badge-pill">2</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">Are dividends tax deductible?</h6>
+                            <small class="text-muted">I have recently decided to invest in....</small>
+                        </div>
+                        <span class="text-muted">2 Answers</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">Is it smart to invest in commodities?</h6>
+                            <small class="text-muted">My bank has recently offered a new....</small>
+                        </div>
+                        <span class="text-muted">1 Answer</span>
+                    </li>
+                </ul>
+
     </div>
-    
 
     <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,11 +1,11 @@
 // todo.. add types to this?
 
-import http = require('http');
+//import http = require('http');
 import express = require('express');
 import path = require('path');
 
 const port : string | number = process.env.port || 1337;
-const privateKey = `1234-abcd`; // We must ensure that the compiled version of this file is never sent to the end user.
+const _privateKey = `1234-abcd`; // We must ensure that the compiled version of this file is never sent to the end user.
 
 const app = new express();
 
@@ -28,7 +28,7 @@ app.use('/', (req, res) => {
 
 app.use(express.static("public"));
 
-app.get("/main.js", (req, res) => {
+app.get("/main.js", (_req, res) => {
 
     res.sendFile(path.resolve(__dirname, "main.js"));
 

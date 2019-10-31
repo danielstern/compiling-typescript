@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
-        "declaration": true, // Governs the creation of d.ts files,
-        "declarationDir": "declarations", // Tells TSC where to put declaration files (by default, the same folder as generated .js files)
+        "declaration": true, // Governs the creation of d.ts files, 
         "target": "es6",
         "module": "commonjs",
         "strict": true,
@@ -12,7 +11,9 @@
         "composite": true,
         "inlineSourceMap": true,
         "noImplicitAny": false,
-        "outDir": "build",
+        "outDir": "./build",
+        "declarationDir": "./build/declarations", // Tells TSC where to put declaration files (by default, the same folder as generated .js files),
+        "tsBuildInfoFile": "./cache/.tsbuildinfo",
         "watch": true,
         "lib": [
             "es6"

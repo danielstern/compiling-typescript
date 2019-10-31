@@ -1,8 +1,8 @@
 import { validateTitle, TitleValidationInfo } from "./validator/validator";
 
-const message: string = "Superchargedddd!";
+//const message: string = "Superchargedddd!";
 
-console.log(message);
+//console.log(message);
 
 
 
