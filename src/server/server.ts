@@ -11,7 +11,7 @@ app.use(express.static("public"));
 app.get("/main.js", (_req, res) => {
 
     /** This patch is relative to the build directory */
-    res.sendFile(path.resolve(__dirname, "..", "main.js"));
+    res.sendFile(path.resolve(__dirname, "..", "client", "client.js"));
 
 });
 

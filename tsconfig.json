@@ -2,15 +2,14 @@
   "extends": "./tsconfig-base.json",
   "references": [
     {
-      "path": "./server"
+      "path": "./src/server"
+    },
+    {
+      "path": "./src/client"
     }
   ],
-  "files": [
-    "main.ts"
-  ],
-  /*"exclude:": [ "./build", "./cache", "./build/**.*" ],*/
   "compilerOptions": {
-    "declarationDir": "./build/declarations", // Tells TSC where to put declaration files (by default, the same folder as generated .js files),
+    "declaration": true,
     "target": "es6",
     "lib": [
       "es6"

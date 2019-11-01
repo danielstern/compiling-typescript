@@ -1,10 +1,10 @@
 {
-    "extends": "./../tsconfig-base.json",
+    "extends": "./../../tsconfig-base.json",
     "compilerOptions": {
         "composite": true,
-        "outDir": "../build/server",
+        "outDir": "../../build/server",
         "rootDir": ".",
-        "tsBuildInfoFile": "../cache/server/.tsbuildinfo",
+        "tsBuildInfoFile": "../../build/cache/server/.tsbuildinfo",
         "module": "commonjs",
         "target": "es5",
         "lib": [

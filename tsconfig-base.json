@@ -10,8 +10,7 @@
         "composite": true,
         "inlineSourceMap": true,
         "noImplicitAny": false,
-        "outDir": "./build",
-        "tsBuildInfoFile": "./cache/.tsbuildinfo",
-        "watch": true        
+        "watch": true        ,
+        "tsBuildInfoFile": "./build/cache/.tsbuildinfo"
     }
 }
