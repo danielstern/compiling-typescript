@@ -12,6 +12,6 @@
         "noImplicitAny": false,
         "outDir": "./build",
         "tsBuildInfoFile": "./cache/.tsbuildinfo",
-        "watch": true
+        "watch": true        
     }
 }

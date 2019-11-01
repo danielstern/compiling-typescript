@@ -2,11 +2,11 @@
   "extends": "./tsconfig-base.json",
   "references": [
     {
-      "path": "./validator"
-    },
-    {
       "path": "./server"
     }
+  ],
+  "files": [
+    "main.ts"
   ],
   /*"exclude:": [ "./build", "./cache", "./build/**.*" ],*/
   "compilerOptions": {

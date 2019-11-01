@@ -1,16 +1,10 @@
-import { validateTitle, TitleValidationInfo } from "./validator/validator";
+//import { validateTitle, TitleValidationInfo } from "./legacy/validator.js";
 
-//const message: string = "Superchargedddd!";
+// TODO: Add functionality
 
-//console.log(message);
+// comminicate with server
 
+// update what's displayed
 
-
-//let a = validateTitle("A title");
-
-/*
-export function createZoo(): Array<Dog> {
-    return [
-        createDog()
-    ];
-}*/
+console.log("Main loaded");
+console.log("Testing watch mode");

@@ -26,3 +26,6 @@ Building: CMD + SHIFT + B
 
 Dealing with CAN'T OVERWRITE ERRORS
 When TSC refuses to overwrite something like a d.ts file, it's because the directory is not properly specified in the config. If it tries overwriting something in a directory and sees that it's the outDir, it will do so.
+
+## Common error when importing one app into another : "Cannot find type definition file for 'node'."
+https://github.com/microsoft/TypeScript/issues/16772
