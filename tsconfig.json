@@ -3,6 +3,17 @@
   "references": [
     {
       "path": "./validator"
+    },
+    {
+      "path": "./server"
     }
-  ]
+  ],
+  /*"exclude:": [ "./build", "./cache", "./build/**.*" ],*/
+  "compilerOptions": {
+    "declarationDir": "./build/declarations", // Tells TSC where to put declaration files (by default, the same folder as generated .js files),
+    "target": "es6",
+    "lib": [
+      "es6"
+    ]
+  }
 }

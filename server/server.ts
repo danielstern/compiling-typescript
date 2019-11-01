@@ -1,8 +1,12 @@
 // todo.. add types to this?
 
 //import http = require('http');
-import express = require('express');
-import path = require('path');
+/*import express = require('express');
+import path = require('path');*/
+
+import * as express from "express";
+import * as path  from "path";
+
 
 const port : string | number = process.env.port || 1337;
 const _privateKey = `1234-abcd`; // We must ensure that the compiled version of this file is never sent to the end user.
@@ -30,7 +34,7 @@ app.use(express.static("public"));
 
 app.get("/main.js", (_req, res) => {
 
-    res.sendFile(path.resolve(__dirname, "main.js"));
+    res.sendFile(path.resolve(__dirname, "..", "main.js"));
 
 })
 

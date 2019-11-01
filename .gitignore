@@ -31,6 +31,8 @@ obj
 *.js
 !legacy/*.js
 
+notes.md
+
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov

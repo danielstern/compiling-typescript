@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "start": "node build/server.js"
+    "start": "node build/server/server.js"
   },
   "devDependencies": {
     "@types/node": "^8.0.14",

@@ -4,5 +4,6 @@
         "composite": true,
         "outDir": "../build/validator",
         "rootDir": ".",
-    }
+        "tsBuildInfoFile": "./cache/validator/.tsbuildinfo",
+    },
   }

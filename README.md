@@ -1,25 +1,15 @@
-# CompilingTypeScript2
+#Compiling TypeScript
 
-## Notes
-###  Q Where does the JS file that is served come from? Is build done automatically?
-### A npm run build is automatically run when the web server button is clicked
+##Installing and Running the Completed Package
 
-### Why does send not work? Because its http not express
+1. Install the TypeScript compiler globally (local install is also possible):
+`npm install -g typescript`
 
-### why is "install new packages" grayed out?
-That's a real mystery. Use npm install instead maybe.
+2. Install this package with Git:
+`git clone [TODO]`
 
-### Running in wathc mode?
-- VsCode offers a good built in terminal
+3. Install local packages with `npm`:
+`npm install`
 
-Opening Code menu: CTRL + SHIFT + P
- - Configure task runner (creates tasks.json)
- - typescript "watch" mode may be availabile
-    - -w flag,
-    - is watching flag
-
-VScode uses tasks.json
-
-Building: CMD + SHIFT + B
-  - can also be used to run watch mode
-  - necessary if you are not using "watch" mode
+4. Run TypeScript compilation and start the server simultaneously with:
+`npm start`
