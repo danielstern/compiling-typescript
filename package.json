@@ -8,9 +8,9 @@
   },
   "scripts": {
     "build": "tsc --build",
-    "clean": "tsc --build --clean",
-    "watch": "tsc -w",
-    "start": "node build/server/server.js"
+    "watch": "echo 'problem with ::tsc -w, output to wrong directory'",
+    "serve": "node build/server/server.js",
+    "start": "npm run build && npm run serve"
   },
   "devDependencies": {
     "@types/express": "^4.17.1",

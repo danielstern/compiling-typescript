@@ -29,3 +29,5 @@ When TSC refuses to overwrite something like a d.ts file, it's because the direc
 
 ## Common error when importing one app into another : "Cannot find type definition file for 'node'."
 https://github.com/microsoft/TypeScript/issues/16772
+
+- To refer to "document" you need to include the DOM library

@@ -29,7 +29,7 @@
         <section class="col-md-8 order-md-1 mt-4 mb-5">
 
             
-            <form>
+            <form id="QuestionForm">
 
                 <h3 class="mb-3">Ask a Question</h3>
 
@@ -37,7 +37,7 @@
 
                         <label for="title">Question Title</label>
 
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="My title">
 
                         <div class="invalid-feedback">
 
@@ -47,13 +47,15 @@
 
                     </section>
 
-                    <section>
+                    <section class="mb-2">
 
                         <label for="contents">Your Question</label>
 
-                        <textarea type="text" class="form-control" id="contents"></textarea>
+                        <textarea type="text" class="form-control" id="contents">My Question </textarea>
 
                     </section>                
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
 
             </form>
 

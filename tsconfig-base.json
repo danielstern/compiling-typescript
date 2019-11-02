@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
         "declaration": true, // Governs the creation of d.ts files, 
-        /*"module": "commonjs",*/ // setting module causes exports not defined error in Chrome
         "strict": true,
         "noUnusedLocals": false, // Declaring a local and not using it will cause a compilation error
         "noUnusedParameters": true,
@@ -10,7 +9,8 @@
         "composite": true,
         "inlineSourceMap": true,
         "noImplicitAny": false,
-        "watch": true        ,
+        "watch": true,
+        "strictNullChecks": false,
         "tsBuildInfoFile": "./build/cache/.tsbuildinfo"
     }
 }

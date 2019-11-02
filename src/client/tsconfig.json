@@ -6,8 +6,10 @@
         "tsBuildInfoFile": "../../build/cache/client/.tsbuildinfo",
         "module": "commonjs",
         "target": "es5",
+        "strictNullChecks": false,
         "lib": [
-          "es5"
+          "es5",
+          "dom"
         ]
     },
   }
