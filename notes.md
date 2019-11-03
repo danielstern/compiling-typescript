@@ -31,3 +31,5 @@ When TSC refuses to overwrite something like a d.ts file, it's because the direc
 https://github.com/microsoft/TypeScript/issues/16772
 
 - To refer to "document" you need to include the DOM library
+
+//https://stackoverflow.com/questions/40900791/cannot-redeclare-block-scoped-variable-in-unrelated-files

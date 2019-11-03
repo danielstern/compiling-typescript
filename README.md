@@ -16,5 +16,8 @@
 
 ## Exploring the Project
 
-### The Legacy Folder
+### /legacy 
 The legacy folder contains a JavaScript utlity that was made a long, long time ago. We have added a declaration file for this validator, allowing Visual Studio Code to provide us with code hints.
+
+### /public
+Contains HTML file which is served to the user - aggregates references to generated .js files.

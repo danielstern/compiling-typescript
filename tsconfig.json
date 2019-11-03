@@ -20,6 +20,6 @@
     "outDir": "./build",
   },
   "files": [
-
+      /* Empty files array specifies that no files should be compiled directly as part of this master package */
   ]
 }

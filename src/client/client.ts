@@ -1,14 +1,11 @@
-// export {};
-//https://stackoverflow.com/questions/40900791/cannot-redeclare-block-scoped-variable-in-unrelated-files
-
 import { Question } from '../@types/question';
 
 (()=>{
-    console.log("Test!");
 
     let questions : Question[] = [];
 
     document.getElementById('QuestionForm').addEventListener("submit", async ()=>{
+
         event.preventDefault();
 
         const title : string = document.forms["QuestionForm"][0].value;
@@ -17,12 +14,9 @@ import { Question } from '../@types/question';
         const request = await fetch(`/new?title=${title}&content=${content}`);
         const json = await request.json();
 
-        console.log(json);
-        console.log(json.questions);
         questions = json.questions;
         render();
 
-        //console.log(title, content);
     });
 
     function render() {
