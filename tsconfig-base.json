@@ -6,11 +6,13 @@
         "noUnusedParameters": true,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
-        "composite": true,
         "inlineSourceMap": true,
         "noImplicitAny": false,
         "watch": true,
         "strictNullChecks": false,
+        "listEmittedFiles":true,
+        "listFiles":true,
+        "incremental": true,
         "tsBuildInfoFile": "./build/cache/.tsbuildinfo"
     }
 }

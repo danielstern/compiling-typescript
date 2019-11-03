@@ -2,13 +2,21 @@
 
 import * as express from "express";
 import * as path  from "path";
+import { Question } from '../@types/question';
+
+/*import { Question } from '../shared/Question';*/
 
 const port : string | number = process.env.port || 1337;
 const app = express();
 
-const questions = [{
-    title:"Are dividends tax deductible?",
-    content:"I have recently decided to invest in...."
+const questions : Question[] = [{
+    title: "Are dividends tax deductible?",
+    content: "I have recently decided to invest in....",
+    answerCount: 2
+},{
+    title:"Is it smart to invest in commodities?",
+    content:"My bank has recently offered a new....",
+    answerCount: 1
 }];
 
 app.use(express.static("public"));
@@ -28,12 +36,16 @@ app.get("/questions", (_req, res) => {
 
 app.get("/new", (req, res) => {
 
-    const { title, content } = req.query;
-    console.log(title, content);
-    questions.push({title, content});
+    const question : Question = req.query;
+    questions.push(question);
+
     res.json({
-        status: "OK"
+
+        status: "OK",
+        questions
+        
     })
+
 });
 
 app.listen(port);

@@ -24,6 +24,8 @@ bin
 
 obj
 
+archive
+
 *.njsproj
 *.njsproj.user
 *.sln

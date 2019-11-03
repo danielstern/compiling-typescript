@@ -7,10 +7,14 @@
     "name": "Daniel 'Code Whisperer' Stern"
   },
   "scripts": {
-    "build": "tsc --build",
+    "build-full": "tsc --build",
+    "build-server": "tsc -p src/server",
+    "build-client": "tsc -p src/client",
+    "build": "tsc -p tsconfig.json",
     "watch": "echo 'problem with ::tsc -w, output to wrong directory'",
+    "watch-wip": "tsc --watch",
     "serve": "node build/server/server.js",
-    "start": "npm run build && npm run serve"
+    "start": "npm run build-full && npm run serve"
   },
   "devDependencies": {
     "@types/express": "^4.17.1",

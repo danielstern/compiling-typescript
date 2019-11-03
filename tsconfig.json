@@ -1,12 +1,13 @@
 {
   "extends": "./tsconfig-base.json",
-  "references": [
+  "references": [ 
     {
       "path": "./src/server"
     },
     {
       "path": "./src/client"
     }
+    
   ],
   "compilerOptions": {
     "declaration": true,
@@ -14,6 +15,11 @@
     "lib": [
       "es6",
       "dom"
-    ]
-  }
+    ],
+    "rootDir": "./src",
+    "outDir": "./build",
+  },
+  "files": [
+
+  ]
 }

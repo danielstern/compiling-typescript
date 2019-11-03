@@ -4,8 +4,12 @@
         "composite": true,
         "outDir": "../../build/client",
         "tsBuildInfoFile": "../../build/cache/client/.tsbuildinfo",
-        "module": "commonjs",
+        "module": "es6",
         "target": "es5",
+        "baseUrl": "./",
+        "paths": {
+          "*" : ["src/@types/*"]
+        },
         "strictNullChecks": false,
         "lib": [
           "es5",

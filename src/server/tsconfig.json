@@ -3,7 +3,6 @@
     "compilerOptions": {
         "composite": true,
         "outDir": "../../build/server",
-        "rootDir": ".",
         "tsBuildInfoFile": "../../build/cache/server/.tsbuildinfo",
         "module": "commonjs",
         "target": "es5",
@@ -12,6 +11,17 @@
         ],
         "types": [
           "node"
-        ]
+        ],
+        "typeRoots": [
+          "../@types"
+        ],
+        "baseUrl": "./",
+        "paths": {
+          "*" : ["src/@types/*"]
+        },
     },
-  }
+    "files":[
+      "server.ts",
+      "../@types/question.d.ts",
+    ]
+}
