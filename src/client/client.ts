@@ -1,5 +1,7 @@
 import { Question } from '../@types/question';
 
+console.log("Client code executed");
+
 (()=>{
 
     let questions : Question[] = [];
@@ -53,6 +55,7 @@ import { Question } from '../@types/question';
 
         const request = await fetch("/questions");
         questions = await request.json();
+        debugger;
         render();
 
     })();

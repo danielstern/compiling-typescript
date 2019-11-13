@@ -14,7 +14,7 @@
     "watch": "tsc --watch",
     "serve": "node build/server/server.js",
     "start": "npm run build-full && npm run serve",
-    "debug": "node --inspect=9229 build/server/server.js"
+    "debug": "npm run build-full && node --inspect=9229 build/server/server.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.1",
