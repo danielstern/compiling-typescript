@@ -28,6 +28,20 @@ app.get("/main.js", (_req, res) => {
 
 });
 
+app.get("/client.js.map", (_req, res) => {
+
+    /** This patch is relative to the build directory */
+    res.sendFile(path.resolve(__dirname, "..", "client", "client.js.map"));
+
+});
+
+app.get("/src/client/client.ts", (_req, res) => {
+
+    /** This patch is relative to the build directory */
+    res.sendFile(path.resolve(__dirname, "..", "..", "src", "client", "client.ts"));
+
+});
+
 app.get("/questions", (_req, res) => {
 
     res.json(questions);

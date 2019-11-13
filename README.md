@@ -2,11 +2,11 @@
 
 ## Installing and Running the Completed Package
 
-1. Install the TypeScript compiler globally (local install is also possible):
+1. OPTIONAL - Install the TypeScript compiler globally (local install is also possible):
 `npm install -g typescript`
 
 2. Install this package with Git:
-`git clone [TODO]`
+`git clone git@github.com:danielstern/compiling-typescript.git`
 
 3. Install local packages with `npm`:
 `npm install`
