@@ -13,8 +13,21 @@
                 "run-script",
                 "debug"
             ],
-            "port": 9229,
+            "port": 9227,
             "sourceMaps": true
-        }    
+        }  ,
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:1337",
+            "webRoot": "${workspaceFolder}"
+        },
+    ],
+    "compounds": [
+        {
+            "name": "Run and Debug",
+            "configurations": ["Launch via NPM", "Launch Chrome"]
+        }
     ]
 }

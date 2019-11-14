@@ -10,11 +10,11 @@
     "build-full": "tsc --build",
     "build-server": "tsc -p src/server",
     "build-client": "tsc -p src/client",
+    "watch-client": "tsc -p src/client --watch",
     "build": "tsc -p tsconfig.json",
-    "watch": "tsc --watch",
     "serve": "node build/server/server.js",
     "start": "npm run build-full && npm run serve",
-    "debug": "npm run build-full && node --inspect=9229 build/server/server.js"
+    "debug": "node --inspect=9227 build/server/server.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.1",

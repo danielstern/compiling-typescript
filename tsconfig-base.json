@@ -8,7 +8,6 @@
         "noFallthroughCasesInSwitch": true,
         "inlineSourceMap": true,
         "inlineSources": true,
-        //"sourceMap": true,
         "noImplicitAny": false,
         "watch": true,
         "strictNullChecks": false,
