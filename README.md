@@ -18,3 +18,6 @@
 
 ### /public
 Contains HTML file which is served to the user - aggregates references to generated .js files.
+
+### /src
+Contains the non-compiled TypeScript code. This code becomes JavaScript that the browser can work with.
