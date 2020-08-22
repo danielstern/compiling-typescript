@@ -50,7 +50,10 @@ app.get("/questions", (_req, res) => {
 
 app.get("/new", (req, res) => {
 
-    const question : Question = req.query;
+    const question : Question = {
+        title: req.query.title as string,
+        content: req.query.content as string,
+    };
     questions.push(question);
 
     res.json({
